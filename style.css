@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    background-color: #FFF5E1;
+    color: black;
+}
+header{
+    background-color: #0fb0b0;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:20px 15% ;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+}
+.navList{
+    display: flex;
+   
+}
+.navList li{
+    list-style: none;
+    background-color:#0fb0b0 ;
+    cursor: pointer;
+}
+.navList a{
+    margin-left: 40px;
+    transition: all .55s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+.main-logo{
+    width: 10px;
+    height: 10px;
+    background-color: #0fb0b0;
+    
+
+}
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+header a,span{
+    text-decoration: none;
+    background-color: #0fb0b0;
+
+}
+header span{
+    color: #31475f;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+   font-size: 50px;
+   margin-top: 100px;
+   color: rgb(161, 112, 206);
+   margin-left: 30px;
+}
+.heading p{
+    font-size: 30px;
+    color: rgb(169, 151, 185);
+    margin-left: 30px;
+ }
+ .All-courses {
+    display:grid;
+    flex-wrap: wrap;
+    grid-template-columns:repeat(2, 1fr);;
+}
+
+.course {
+    padding: 30px;
+    border: 1px solid #ddd; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px; 
+}
+.course h2{
+    font-size: 30px;
+    color: rgb(193, 64, 193);
+}
+.course p{
+    margin-top: 8px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 30px;
+   
+}
+.WCE-img img { 
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 20px; 
+    border: 1px solid rgb(193, 64, 193) ;
+}
+
+.content {
+    font-size: 15px; 
+    line-height: 1.6; 
+    text-align:left;
+    margin-left: 20px;
+}
+
+.module-detail {
+    display: none;
+}
+.instructor-card{
+  display: none;
+}
+.btn{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  border: none;
+    background-color: rgb(220, 83, 220);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.container {
+    background-color: #a8e6e6;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 90vh;
+    display: none;
+  }
+  
+  form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  form h2 {
+    text-align: center;
+    color: rgb(220, 83, 220);
+    margin-bottom: 20px;
+  }
+  
+  form input, textarea {
+    border: 0;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background: rgb(241, 236, 241);
+    font-size: 16px;
+    border-radius: 10px;
+    resize: none;
+  }
+  
+  form button {
+    background: rgb(241, 236, 241);
+    color: rgb(220, 83, 220);
+    border: 1px solid rgb(220, 83, 220);
+    padding: 15px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    transition: all .5s ease-in;
+  }
+  
+  form button:hover {
+    border: 1px solid rgb(220, 83, 220);
+    background: rgb(220, 83, 220);
+    color: white;
+  }
+  #menu-icon{
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    background-color: #0fb0b0;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navList li {
+        margin: 10px 0;
+        background-color: transparent;
+    }
+
+    .navList a {
+        margin-left: 0;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .heading h2 {
+        font-size: 36px;
+        margin-top: 60px;
+        margin-left: 0;
+    }
+
+    .heading p {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    .All-courses {
+        grid-template-columns: 1fr;
+    }
+
+    .course {
+        margin: 10px;
+    }
+
+    .course h2 {
+        font-size: 24px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .WCE-img img {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        padding: 2vw;
+        width: 80%;
+        max-width: 400px;
+    }
+    #menu-icon{
+        display: block;
+    }
+    .navList{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        transition: all .55s ease;
+    }
+    .navList a{
+        display: block;
+        padding: 17px;
+        font-size: 22px;
+    }
+    .navList.active{
+      right: 0;
+}
+}
+
+
+
